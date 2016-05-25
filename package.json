@@ -1,0 +1,29 @@
+{
+  "name": "mgw-shouty",
+  "version": "1.0.0",
+  "description": "A custom API Connect policy to make APIs SHOUT",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/tape/bin/tape tests/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/No9/mgw-shouty.git"
+  },
+  "keywords": [
+    "apiconnect",
+    "apic",
+    "mgw",
+    "policy",
+    "gateway"
+  ],
+  "author": "anton whalley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/No9/mgw-shouty/issues"
+  },
+  "homepage": "https://github.com/No9/mgw-shouty#readme",
+  "devDependencies": {
+    "tape": "^4.5.1"
+  }
+}

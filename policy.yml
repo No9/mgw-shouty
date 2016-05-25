@@ -1,0 +1,15 @@
+policy: 1.0.0
+
+info:
+  title: Shouty
+  name: mgw-shouty
+  version: 1.0.0
+  description: A policy that makes API requests LOUD
+  contact:
+    name: Anton Whalley
+    url: https://github.com/no9/mgw-shouty/issues
+    email: awhalley@ie.ibm.com
+
+gateways:
+ - micro-gateway
+
