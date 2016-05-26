@@ -7,11 +7,12 @@ test('policy is called', function(t) {
    var flow = {};
    flow.proceed = function() {
       t.ok('Proceed Called');
-   }
-   
-   var context = {};
-   context.state = { "test" : "this should be loud" };
+   };
+   var b = new Buffer('["this is a test"]') ;  
+   var context = { message : {
+         body : b
+      }
+   };
 
    p({}, context, flow);
-      }
 });

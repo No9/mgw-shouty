@@ -23,14 +23,16 @@ module.exports = function (config) {
    *               method must be called to enforce the next policy in the assembly.
    */
     return function (props, context, flow ) {
-      
-      var resp = context.state;
-      for(var prop in resp) {
-        if(typeof resp[prop] === 'string') {
-          resp[prop] = resp[prop].toUpperCase();
+     
+     var resp = JSON.parse(context.message.body.toString());
+
+     for(var i = 0; i < resp.length; i++) {
+        if(typeof resp[i] === 'string') {
+           resp[i] = resp[i].toUpperCase();
         }
+
       }
-      context.message = resp;
+      context.message.body = resp;
       console.log('Invoking mgw-shouty');
       flow.proceed();
     }
