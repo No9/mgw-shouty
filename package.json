@@ -1,6 +1,6 @@
 {
   "name": "mgw-shouty",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "A custom API Connect policy to make APIs SHOUT",
   "main": "index.js",
   "scripts": {
